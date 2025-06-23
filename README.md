@@ -58,18 +58,18 @@ POST /commandes
 ### Test avec curl
 ```bash
 # Voir le menu
-curl http://localhost:3001/menu
+curl http://localhost:3002/menu
 
 # Créer une commande
-curl -X POST http://localhost:3001/commandes \
+curl -X POST http://localhost:3002/commandes \
   -H "Content-Type: application/json" \
   -d '{"clientId":"test","items":[{"menuId":"id","quantite":1}]}'
 ```
 
 ## 🌐 URLs importantes
 
-- **API** : http://localhost:3001
-- **Documentation Swagger** : http://localhost:3001/api/docs
+- **API** : http://localhost:3002
+- **Documentation Swagger** : http://localhost:3002/api/docs
 
 
 ## 📊 Statuts de commande
